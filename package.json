@@ -1,11 +1,11 @@
 {
-  "name": "Mixture-of-enthusiasm",
+  "name": "Mixture-of-Enthusiasm-clone",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/Mixture-of-enthusiasm/",
+    "build": "vite build --base=/Mixture-of-Enthusiasm-clone/",
     "preview": "vite preview"
   },
   "devDependencies": {

@@ -2,15 +2,10 @@
 
 const openBtn = document.getElementById('openBurgerMenu');
 const closeBtn = document.getElementById('closeBurgerMenu');
-const backdrop = document.getElementById('modal-brg');
+const backdrop = document.getElementById('modalBrg'); // исправлен id
 
-openBurgerMenu.addEventListener('click', () => {
-  modalBrg.classList.remove('is-hidden');
-});
-
-closeBurgerMenu.addEventListener('click', () => {
-  modalBrg.classList.add('is-hidden');
-});
+openBtn.addEventListener('click', () => backdrop.classList.remove('is-hidden'));
+closeBtn.addEventListener('click', () => backdrop.classList.add('is-hidden'));
 
 const openBtn1 = document.getElementById('openMenuPrice1');
 const closeBtn1 = document.getElementById('closePriceMenu1');
