@@ -1,0 +1,45 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family), sans-serif;
+  color: var(--color-neutral-darkest);
+  line-height: 1.6;
+  background: var(--color-scheme-3-background);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+input, textarea {
+  background-color: transparent;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

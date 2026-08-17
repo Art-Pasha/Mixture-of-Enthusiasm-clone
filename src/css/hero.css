@@ -1,0 +1,172 @@
+
+
+/* ==== HERO SECTION ==== */
+
+.hero {
+  margin: 0 auto;
+  max-width: 375px;
+}
+
+
+.hero-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  padding: 48px 16px;
+}
+
+.hero-title {
+  font-family: var(--second-family);
+  font-size: 44px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 16px;
+  padding: 0;
+}
+
+
+.hero-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-scheme-3-text);
+  margin: 0;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 16px;
+
+  width: 100%;
+}
+
+.hero-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  min-height: 46px;
+  white-space: nowrap;
+}
+
+.hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  min-height: 46px;
+  white-space: nowrap;
+  background: var(--opacity-neutral-darkest-5);
+}
+
+
+/* ==== TABLET ==== */
+
+@media (min-width: 768px) {
+
+  .hero {
+    max-width: 768px;
+  }
+
+  .hero-text-block {
+    gap: 8px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-block: 24px;
+    width: 100%;
+    max-width: 768px;
+  }
+
+  .hero-title {
+    max-width: 444px;
+    font-size: 44px;
+  }
+
+  .hero-content {
+    gap: 32px;
+    /* padding: 0; */
+    max-width: 641px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 305px;
+    height: 46px;
+    gap: 16px;
+    justify-content: flex-start;
+  }
+
+  .hero-link {
+    flex: 0 0 112px;
+    height: 46px;
+    padding: 0;
+  }
+
+  .hero-btn {
+    flex: 0 0 128px;
+    height: 46px;
+    padding: 0;
+  }
+}
+
+
+/* ==== DESKTOP ==== */
+
+@media (min-width: 1336px) {
+
+  .hero {
+    max-width: 1336px;
+  }
+
+
+  .hero-text-block {
+    flex-direction: row;
+    gap: 24px;
+    padding-block: 80px;
+    padding-inline: 64px;
+    max-width: 1440px;
+  }
+
+  .hero-title {
+    max-width: 1336px;
+    font-size: 72px;
+
+  }
+
+  .hero-content {
+    min-width: 641px;
+  }
+
+  .hero-buttons {
+    width: 257px;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .hero-link {
+    width: 113px;
+    height: 46px;
+  }
+
+  .hero-btn {
+    width: 128px;
+    height: 46px;
+   }
+}
+
+

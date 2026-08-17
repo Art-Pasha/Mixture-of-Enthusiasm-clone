@@ -1,0 +1,170 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.25);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.backdrop.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
+
+/* Modal Window */
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 100%;
+    min-width: 320px;
+    /* Mobile fluid start */
+    min-height: 720px;
+    background-color: var(--color-hawkes-blue-lighter);
+    padding: 64px 16px 112px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Submit Button */
+.modal__submit-btn {
+    width: 100%;
+    min-height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+/* Адаптивність мобілки з 375px */
+@media screen and (min-width: 375px) {
+    .modal {
+        max-width: 375px;
+    }
+}
+
+/* Tablet (768px+) */
+@media screen and (min-width: 768px) {
+    .modal {
+        min-width: 704px;
+        min-height: 573px;
+        padding: 64px 92px;
+        border-radius: 24px;
+    }
+
+    .modal__subtitle {
+        font-size: 22px;
+    }
+
+    .modal__price {
+        font-size: 36px;
+    }
+
+    .modal__submit-btn {
+        margin: auto;
+        max-width: 155px;
+    }
+}
+
+/* Desktop (1336px+) */
+@media screen and (min-width: 1336px) {
+    .modal {
+        min-width: 768px;
+        padding: 64px;
+    }
+}
+
+/* Close Button */
+.modal__close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
+}
+
+/* Typography */
+
+.title {
+    margin-bottom: 32px;
+}
+
+.modal__subtitle {
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 8px;
+    font-family: var(--second-family);
+
+}
+
+.modal__price {
+    font-size: 44px;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 32px;
+    font-family: var(--second-family);
+}
+
+/* Form Styles */
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.modal__row {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.modal__field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.modal__label {
+    letter-spacing: 0;
+}
+
+.modal__input {
+    width: 100%;
+    min-height: 42px;
+    background-color: rgba(13, 11, 10, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 12px;
+    padding: 8px 12px;
+    outline: transparent;
+    caret-color: #0D0B0A;
+}
+
+.modal__input::placeholder {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__input:focus::placeholder {
+    color: transparent;
+}
+
+
+/* Grid Row for Tablet/Desktop */
+@media screen and (min-width: 768px) {
+    .modal__row {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+}

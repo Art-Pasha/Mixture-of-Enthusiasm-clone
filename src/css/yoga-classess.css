@@ -1,0 +1,158 @@
+.explore__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 48px 0;
+    row-gap: 48px;
+}
+
+.explore__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.explore__label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.explore__label--moved {
+    margin-bottom: 12px;
+}
+
+
+.explore__title-text--tablet {
+    display: none;
+}
+
+.explore__subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+.explore__img {
+    border-radius: 16px;
+}
+
+.explore__description {
+
+    line-height: 1.6;
+    text-align: center;
+}
+
+.explore__anchor {
+    padding: 10px 24px;
+    outline: unset;
+    display: block;
+    text-align: center;
+
+}
+
+
+/* =====================================================
+TABLET STYLES (min-width: 768px)
+===================================================== */
+@media screen and (min-width: 768px) {
+    .explore__label--moved {
+        margin-bottom: 16px;
+}
+    .explore__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        align-items: baseline;
+        row-gap: 40px;
+        margin: 40px 0 61px;
+    }
+
+    .explore__item {
+        width: calc((100% - 24px) / 2);
+    }
+
+
+    .explore__item--classes:nth-of-type(3),.explore__item--link {
+        width: 100%;
+    }
+
+    .explore__title, 
+    .explore__description {
+        max-width: 704px;
+    }
+
+    .explore__title + .explore__description {
+        font-size: 18px;
+    }
+
+    .explore__item--classes {
+        row-gap: 0;
+    }
+
+    .explore__picture {
+        margin-bottom: 16px;
+    }
+
+    .explore__title-text--desktop,
+    .explore__subtitle-addon {
+        display: none;
+    }
+
+    .explore__title-text--tablet {
+        display: block;
+    }
+
+    .explore__anchor {
+        max-width: 110px;
+        margin-left: auto;
+        margin-right: auto;
+        white-space: nowrap;
+    }
+}
+
+/* =====================================================
+DESKTOP STYLES (min-width: 1336px)
+===================================================== */
+@media screen and (min-width: 1336px) {
+
+    .explore__title-text--desktop {
+        display: block;
+    }
+
+    .explore__subtitle-addon {
+        display: none;
+    }
+
+    .explore__title-text--tablet {
+        display: none;
+    }
+    .explore__list{
+        margin: 40px 0;
+    }
+    .explore__list>.explore__item--classes {
+        width: calc((100% - 48px) / 3);
+        row-gap: 24px;
+    }
+
+    .explore__picture {
+        margin-bottom: 8px;
+    }
+
+    .explore__subtitle {
+        font-size: 36px;
+    }
+
+    .container>.explore__title,
+    .container>.explore__description {
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,100 @@
+/*OUR TEAM*/
+.team__tagline {
+    text-align: center;
+}
+
+.team__description {
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.team__info {
+    padding-block: 24px;
+}
+
+.team__name {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;  
+}
+.team__position {
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
+    padding-bottom: 16px;
+}
+
+.team__brief-info {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+    flex-grow: 1; 
+}
+
+.team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: baseline;
+}
+
+.team__card-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.team__social-links {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+}
+
+.team__social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    fill: var(--color-neutral-darkest);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team__social-icon:hover,
+.team__social-icon:focus {
+    opacity: 0.5;
+    outline: none;
+}
+.team__social-icon:active {
+    opacity: 0.3;
+}
+
+
+/*Tablet(768px)*/
+@media screen and (min-width: 768px) {
+    
+    .team__list {
+        column-gap: 24px;
+        row-gap: 48px;
+    }
+    .team__card {
+        width: calc((100% - 24px) / 2);
+    }
+}
+
+/*Desktop (1336px)*/
+@media screen and (min-width: 1336px) {
+    
+    
+    .team__list {
+        column-gap: 24px;
+        row-gap: 60px;
+    }
+    .team__card {
+        width: calc((100% - 48px) / 3);
+    }
+    }
